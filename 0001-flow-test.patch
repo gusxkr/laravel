@@ -1,0 +1,22 @@
+From d6dd292ee73d0a3a68c9902029b421300a408320 Mon Sep 17 00:00:00 2001
+From: hanjin <hanjin@siliconii.net>
+Date: Mon, 25 Apr 2022 14:51:33 +0900
+Subject: [PATCH] flow test
+
+---
+ public/info.php | 3 +++
+ 1 file changed, 3 insertions(+)
+ create mode 100644 public/info.php
+
+diff --git a/public/info.php b/public/info.php
+new file mode 100644
+index 0000000..cf60860
+--- /dev/null
++++ b/public/info.php
+@@ -0,0 +1,3 @@
++<?php
++phpinfo();
++?>
+-- 
+2.25.1
+
