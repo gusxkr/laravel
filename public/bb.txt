@@ -1,1 +1,0 @@
-aws s3 sync /www/s2/www/ru/data/cs_img/ s3://stylekorean-image/ru/data/cs_img/
