@@ -1,8 +1,10 @@
 #!/bin/bash
 
-github_id="hj"
-github_token="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"
-github_address="https://github.com/siliconii-hanjin/test.git"
+#sample code
+github_id="test"
+github_token="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"
+github_address="github.com/hanjinjung/laravel.git"
 
-git push https://$github_id:$github_Token@$github_Address
+git push https://$github_id:$github_token@$github_address
+
 
