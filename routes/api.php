@@ -18,11 +18,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/sku/{sku}', [ItemsController::class, 'searchSku']);
 Route::get('/itid/{it_id}', [ItemsController::class, 'searchItId']);
 
-/*
-get using ro db
-post using rw db, auth
- */
-
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
