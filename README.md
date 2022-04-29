@@ -39,28 +39,59 @@ Upstream에 변경사항이 추가 되었을 수 있으니 Upstream -> Origin으
 
 
 이후 로컬 소스 동기화 방법  
-  1)  docker cli 사용  
-docker-desktop -> containers -> cli  
-#sudo su -  
-#cd /www/laravel  (프로젝트 위치)  
-#git pull origin main
 
-  2)  windows git 사용    
-window 프로젝트 폴더 -> 우클릭 -> Git Bash Here  
-$git pull origin main
+    1) docker cli 사용  
+    docker-desktop -> containers -> cli  
+    #sudo su -  
+    #cd /www/laravel  (프로젝트 위치)  
+    #git pull origin main
+
+    2) windows git 사용    
+    windows 해당 프로젝트 폴더 -> 우클릭 -> Git Bash Here  
+    $git pull origin main
 
 
 
 ## 2. 개발, 테스트
 뚝딱뚝딱  
-  1) Local 개발.
-  2) Origin Push  
-  2-1) docker-desktop -> containers -> cli  
-#sudo su -  
-#cd /www/laravel  (프로젝트 위치)  
-#**[ git add . ]** or **[ git add add할 파일 ]**  
-#git commit -m "변경사항"  
-#git push origin main  
+1) Local 개발.
+2) Origin Push  
+1st commit 전 최초 설정  
+#git config --global user.email "이메일주소"  
+#git config --global user.name "이름"  
+
+push 전 Token 발급  
+ ![git세팅](https://user-images.githubusercontent.com/103559371/165892823-17471c30-588e-45b0-9b70-4b5bde25e35e.png)
+
+![git_develop](https://user-images.githubusercontent.com/103559371/165893066-cd9088be-ac4b-402f-83ad-cf09232ea09c.png)  
+
+![git_personal](https://user-images.githubusercontent.com/103559371/165892889-5f496612-21de-4239-bb69-b88866fef3a3.png)
+
+![git_token_set](https://user-images.githubusercontent.com/103559371/165893163-101c71e2-9c59-440a-a185-2e0dacbac349.png)
+
+토큰 재확인이 불가하므로, 소중히 보관.
+
+
+       서버접속방법  
+       2-1) docker cli 사용
+       docker-desktop -> containers -> cli  
+       #sudo su -  
+       #cd /www/laravel  (프로젝트 위치)  
+   
+       2-2) windows git 사용
+       windows 해당 프로젝트 폴더 -> 우클릭 -> Git Bash Here
+
+       접속 후 명령어
+       #git remote -v (origin 경로 확인)
+       #git status (상태 확인)
+       #git add .   (모든파일 add)
+       #git commit -m "변경사항"  
+       #git push origin main  
+
+       push 후 위에서 발급받은 Token id, pw 입력
+       
+
+
 * add, commit, push의 차이  
 ![github_flow](https://user-images.githubusercontent.com/103559371/165874944-43b860dc-c045-4497-9463-8e0168bcd1f0.png)  
 
