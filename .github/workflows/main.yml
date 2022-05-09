@@ -22,4 +22,4 @@ jobs:
           port: ${{ secrets.PORT }}
           script: |
             cd /var/www/html/laravel
-            git pull https://github.com/siliconii-hanjin/laravel.git html
+            git pull https://github.com/siliconii-hanjin/laravel.git
