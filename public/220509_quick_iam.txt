@@ -1,0 +1,24 @@
+arn:aws:iam::615466742229:policy/service-role/AWSQuickSightS3Policy
+
+arn:aws:iam::615466742229:policy/service-role/AWSQuickSightRDSPolicy
+
+arn:aws:iam::aws:policy/service-role/AWSQuickSightTimestreamPolicy
+
+arn:aws:iam::615466742229:policy/service-role/AWSQuickSightIAMPolicy
+
+arn:aws:iam::aws:policy/service-role/AWSQuickSightSageMakerPolicy
+
+arn:aws:iam::aws:policy/AWSQuickSightIoTAnalyticsAccess
+
+arn:aws:iam::aws:policy/service-role/AWSQuickSightElasticsearchPolicy
+
+arn:aws:iam::615466742229:policy/service-role/AWSQuickSightRedshiftPolicy
+
+arn:aws:iam::aws:policy/service-role/AWSQuicksightAthenaAccess
+
+arn:aws:iam::aws:policy/service-role/QuickSightAccessForS3StorageManagementAnalyticsReadOnly
+
+arn:aws:iam::615466742229:role/service-role/aws-quicksight-service-role-v0
+
+계정 -> data팀그룹 -> 그걸 메인
+
