@@ -2,18 +2,18 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Items;
+use App\Models\Item;
 use Illuminate\Support\Facades\DB;
 
-class ItemsController extends Controller
+class ItemController extends Controller
 {
     public function searchSku($sku)
     {
-        return Items::where('s2_product_code', $sku)->get();
+        return Item::where('s2_product_code', $sku)->get();
     }
 
     public function searchItId($it_id)
     {
-        return Items::where('it_id', $it_id)->get();
+        return Item::where('it_id', $it_id)->get();
     }
 }

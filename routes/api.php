@@ -1,6 +1,7 @@
 <?php
 
-use App\Http\Controllers\ItemsController;
+use App\Http\Controllers\ItemController;
+use App\Http\Controllers\PromotionController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -15,10 +16,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/sku/{sku}', [ItemsController::class, 'searchSku']);
-Route::get('/itid/{it_id}', [ItemsController::class, 'searchItId']);
-
-
+Route::get('/sku/{sku}', [ItemController::class, 'searchSku']);
+Route::get('/itid/{it_id}', [ItemController::class, 'searchItId']);
+Route::get('/promotion/{idx}', [PromotionController::class, 'searchIdx']);
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
