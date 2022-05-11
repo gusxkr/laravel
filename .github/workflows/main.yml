@@ -26,3 +26,4 @@ jobs:
             chown -R www-data:www-data storage
             chown -R www-data:www-data bootstrap/cache/
             chmod -R 755 bootstrap/cache/
+ 
